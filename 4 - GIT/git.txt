@@ -1,0 +1,36 @@
+git init บอกให้ git ทำงานที่ โฟลเดอร์นั้น
+
+เอาทุกไฟล์
+git add . 
+
+ไฟล์ที่ต้องการเท่านั้น
+git add ตามด้วชื่อไฟล์ Ex. git add index.html 
+
+git commit - m " รายระเอียดที่ต้องการใส่ " 
+
+
+ใช้ครั้งแรกหลังจากเรา git commit ไปแล้วต้องการยกเลิก
+git rm --cached ชื่อไฟล์ที่ต้องการลบ commit  Ex. git rm --cached index.html
+
+ครั้งต่อไปเราจะใช้คำสั่ง
+git restore ตามด้วยชื่อไฟล์ที่ต้องการกลับไปเป็น commit ล่าสุด Ex. git restore index.html
+
+git restore --staged . เรียกคืนทุกไฟล์กลับไปเป็น commit ล่าสุด
+
+ยกเลิก commit มันไม่ได้แก้ code นะ แก้แค่ status 
+git reset --soft HEAD^1  
+
+
+ดูการทำงานที่ผ่านมา
+git log --oneline
+
+ดู status ต่สง
+git status 
+
+git fetch
+ใช้ตรวจสอบว่าไฟล์ ในเครื่อง กับ remote(ไฟล์บน github) มีความแตกต่างกันหรือไม่ 
+ไฟล์ไหนใหม่กว่ากัน 
+
+git pull 
+เป็นการดึงไฟล์ที่มีการเปลี่ยนแปลงใน remote(ไฟล์บน github) มาเปลี่ยนแปลงในเครื่อง
+ซึ่งจริงแล้วมันใช้คำสั่ง git fetch ตามด้วย git merge นั้นเอง
