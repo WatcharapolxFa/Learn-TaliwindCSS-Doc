@@ -1,9 +1,19 @@
 //Convert   String(x)   Number(x)
-// + เท่านั้นที่เอา string มาต่อถ้าเป็นตัวอื่นจะทำเลยเช่น  console.log("2"*"2") = 4 เลย
+//Ex 
+let msg = '12';
+msg = Number(msg);
+
+// + เท่านั้นที่เอา string มาต่อถ้าเป็นตัวอื่นจะทำเลย
+//Ex 
+console.log("2"*"2") = 4 ;
 //typeof เอาไว้เช็ตประเภทของตัวแปร แต่ตอนใช้ให้ค่าเป็น String
+//Ex 
+typrof(msg);
+
 //NaN => Not a Number
 
 // `` นิยมใช้มากกว่าเพราะ แทรกข้อความได้ทุกทึ่ 
+// ${ตัวแปรที่ต้องการเอาค่าของตัวแปลมาแสดงผล}
 let nickname = `Far`
 let fullName = `Hi I name is ${name} ${lastname} I nickname is ${nickname} `
 console.log(fullName)
