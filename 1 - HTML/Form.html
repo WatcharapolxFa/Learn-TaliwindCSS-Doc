@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
     <style>
-        form {
-            background-color: burlywood;
-            width: 500;
-            text-align: right;
-            padding: 100 px;
-        }
+      form {
+        background-color: burlywood;
+        width: 500;
+        text-align: right;
+        padding: 10px;
+      }
     </style>
-</head>
-<html>
+  </head>
+  <html>
+    <body>
+      <h2>HTML Forms</h2>
 
-<body>
-
-    <h2>HTML Forms</h2>
-
-    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+      <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
         <label for="Fname">First Name :</label>
-        <input type="text" name="Fname"><br>
-        <br>
+        <input type="text" name="Fname" /><br />
+        <br />
         <fieldset>
-            <legend>Gender</legend>
-                <input type="radio" name="Gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" name="Gender" value="female">
-                <label for="female">Female</label>
-                <input type="radio" name="Gender" value="other">
-                <label for="other">Other</label>
+          <legend>Gender</legend>
+          <input type="radio" name="Gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="Gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="Gender" value="other" />
+          <label for="other">Other</label>
         </fieldset>
-        <br><br>
-        <input type="checkbox" name="Vehicle1" value="Bike">
+        <br /><br />
+        <input type="checkbox" name="Vehicle1" value="Bike" />
         <label for="other">I have Bike</label>
-        <br><br>
+        <br /><br />
         <label for="cars">Choose a car: </label>
-        <select id="cars" name="cars" size="4" multiple>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
+        <select id="cars" name="cars">
+          <!-- size="4" multiple -->
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
         </select>
-        <br><br>
-        <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
-        <br><br>
+        <br /><br />
+        <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.</textarea
+        >
+        <br /><br />
         <label for="favcolor">Select your favorite color:</label>
-        <input type="color" id="favcolor" name="favcolor">
-        <br><br>
+        <input type="color" id="favcolor" name="favcolor" />
+        <br /><br />
         <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday">
-        <br><br>
-        <input type="submit" value="Submit">
-    </form>
-
-
-</body>
-
+        <input type="date" id="birthday" name="birthday" />
+        <br /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" />
+      </form>
+    </body>
+  </html>
 </html>
