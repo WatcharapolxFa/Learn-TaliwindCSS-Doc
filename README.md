@@ -1,2 +1,0 @@
-# CodeCampVsix
-never stop learning
